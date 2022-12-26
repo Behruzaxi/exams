@@ -1,7 +1,11 @@
-function helloName(name){
-    return "hello" + name;
- }
+const arr = ['css', 'js', 'ts'];
 
+const fromIndex = arr.indexOf('css'); // 👉️ 0
+const toIndex = 2;
 
- let a = "saasas"
- let b = "sasasasasasas"
+const element = arr.splice(fromIndex, 1)[0];
+console.log(element); // ['css']
+
+arr.splice(toIndex, 0, element);
+
+console.log(arr);
